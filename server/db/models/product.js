@@ -28,11 +28,6 @@ const Product = db.define('product', {
             min: 0,
         },
     },
-    rating: {
-        type: Sequelize.ENUM,
-        defaultValue: 0,
-        values: [0, 1, 2, 3, 4, 5],
-    },
     photo: {
         type: Sequelize.STRING,
         validate: {
