@@ -19,13 +19,6 @@ const User = db.define('user', {
       isEmail: true,
     },
   },
-  telephone: {
-    type: Sequelize.INTEGER,
-    unique: true,
-    validate: {
-      isNumeric: true,
-    },
-  },
   company: {
     type: Sequelize.STRING,
   },
